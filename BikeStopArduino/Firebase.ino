@@ -19,21 +19,13 @@ void FirebaseRun(){
   }
 }
 
-class Morse
-{
-  public:
-    Morse(int pin);
-    void dot();
-    void dash();
-  private:
-    int _pin;
-};
+
 
 void FirebaseStup(){
   String placa = Firebase.getString(WiFi.macAddress());
   if(placa == NULL) {
     String mac = WiFi.macAddress();
-    Firebase.set(mac, "fc-led.local");
+    Firebase.set(mac, "bikestop.local");
   } else {
     Serial.print("Achei :)");
   }
