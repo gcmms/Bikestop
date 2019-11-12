@@ -24,11 +24,17 @@ static const uint8_t D10 = 1;
 #define FIREBASE_AUTH "AIzaSyCo2RBpXJ7QiQBru64ItWBsdZvhdsIfEe4"
 
 void setup() {
+  WiFiManage();
   inicializeWiFi();
   InicializaDNS();
+  inicializaHTTP();
+  FirebaseStup();
+  inicializaHTTP();
 
 }
 
 void loop() { 
   loopNDS();
+  FirebaseRun();
+  
 }
