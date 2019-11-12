@@ -62,7 +62,3 @@ void loopNDS(){
 
   Serial.println("Done with client");
 }
-
-String paginaHTML(){
-  String html = "";
-}
