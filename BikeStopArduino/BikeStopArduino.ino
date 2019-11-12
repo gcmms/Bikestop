@@ -25,9 +25,10 @@ static const uint8_t D10 = 1;
 
 void setup() {
   inicializeWiFi();
+  InicializaDNS();
 
 }
 
 void loop() { 
-
+  loopNDS();
 }
