@@ -3,7 +3,8 @@
 String host = "bikestop";
 
 WiFiServer server(80);
-void InicializaDNS(){
+
+void nDNSStup(){
   if (!MDNS.begin(host)) {
    //DEBUGGING("Erro ao iniciar o servico mDNS!");
     while (1) {

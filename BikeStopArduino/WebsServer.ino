@@ -1,4 +1,4 @@
-void inicializaHTTP(){
+void HTTPStup(){
    // Start TCP (HTTP) server
   server.begin();
   Serial.println("TCP server started");

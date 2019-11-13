@@ -1,12 +1,12 @@
 #include <WiFiManager.h> 
 
-void WiFiManage(){
+void WiFiManageStup(){
     WiFiManager wifiManager;
     wifiManager.autoConnect("BikeStop - Estação 01");
     Serial.println("Contenctando :)");
 }
 
-void inicializeWiFi(){
+void WiFiStup(){
   while (WiFi.status() != WL_CONNECTED) {
     Serial.print(".");
     delay(500);
